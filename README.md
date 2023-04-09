@@ -42,7 +42,7 @@ This will start a local web server, and you can view the application in your web
 
 2. Start the mock API server by running the following command:
 
-`json-server --watch db.json --port 5000`
+`json-server --no-cors db.json --port 5000`
 
 This command will start a mock API server at http://localhost:5000.
 
@@ -50,11 +50,11 @@ This command will start a mock API server at http://localhost:5000.
 
 The following endpoints are available for use in the User Management Dashboard:
 
-- `GET /users:` Fetch all users
-- `GET /users/:id:` Fetch a specific user by id
-- `POST /users:` Add a new user
-- `PUT /users/:id:` Update a user by id
-- `PATCH /users/:id:` Partially update a user by id
-- `DELETE /users/:id:` Delete a user by id
+- `GET /users` Fetch all users
+- `GET /users/:id` Fetch a specific user by id
+- `POST /users` Add a new user
+- `PUT /users/:id` Update a user by id
+- `PATCH /users/:id` Partially update a user by id
+- `DELETE /users/:id` Delete a user by id
 
 Good luck!
